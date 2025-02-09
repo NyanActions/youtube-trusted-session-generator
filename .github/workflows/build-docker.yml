@@ -40,7 +40,7 @@ jobs:
                   file: ./Dockerfile
                   platforms: linux/amd64,linux/arm64/v8
                   push: true
-                  tags: ghcr.io/${{ github.repository }}:latest
+                  tags: ghcr.io/nyanactions/youtube-trusted-session-generator:latest
                   cache-from: type=gha
                   cache-to: type=gha,mode=max
             - name: Build and push with HTTP API
@@ -50,6 +50,6 @@ jobs:
                   file: ./Dockerfile.webserver
                   platforms: linux/amd64,linux/arm64/v8
                   push: true
-                  tags: ghcr.io/${{ github.repository }}:latest
+                  tags: ghcr.io/nyanactions/youtube-trusted-session-generator:latest
                   cache-from: type=gha
                   cache-to: type=gha,mode=max
